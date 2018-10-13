@@ -1,6 +1,6 @@
 # Elephants
 
-A minimal Hugo theme. Forked from Benny Mai's [Elephants](https://github.com/meibenny/elephants)
+A minimal Hugo theme. Forked from Benny Mei's [Elephants](https://github.com/meibenny/elephants).
 
 ## Features
 * No JavaScript
