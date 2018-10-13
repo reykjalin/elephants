@@ -1,4 +1,4 @@
-# Elephants
+# r-elephants
 
 A minimal Hugo theme. Forked from Benny Mei's [Elephants](https://github.com/meibenny/elephants).
 
@@ -9,7 +9,7 @@ A minimal Hugo theme. Forked from Benny Mei's [Elephants](https://github.com/mei
 ## Installation
 In the folder of your Hugo site, run:
 ```
-    git submodule add https://gitlab.com/reykjalin/elephants.git themes/elephants
+    git submodule add https://gitlab.com/reykjalin/r-elephants.git themes/r-elephants
 ```
 
 ## Dedication
