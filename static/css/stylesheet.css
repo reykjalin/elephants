@@ -1,16 +1,22 @@
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: monospace;
     color: black;
     margin: auto;
     max-width: 50em;
     font-size: 12pt;
+    display: flex;
+    flex-direction: column;
 }
 
 #page-title, #page-pages {
     text-align: center;
 }
 
-#page-title h1 a, #page-pages a, .post a {
+#page-title h1 a, #page-pages a, .post a, footer a {
     color: black;
 }
 
@@ -19,7 +25,7 @@ a {
     border-bottom: 1px solid;
 }
 
-#page-title a:hover, #page-pages a:hover, .post a:hover {
+#page-title a:hover, #page-pages a:hover, .post a:hover, footer a:hover {
     text-decoration: none;
     border-bottom: 2px solid;
     font-weight: bold;
@@ -49,4 +55,20 @@ a {
 pre {
     padding: 0.5em;
     border-radius: 0.25em;
+}
+
+#content, .blog-post {
+    flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  border-top: 1px solid;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
 }
