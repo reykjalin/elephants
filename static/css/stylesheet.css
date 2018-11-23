@@ -1,0 +1,100 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: monospace;
+    color: black;
+    margin: auto;
+    max-width: 1024px;
+    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-title, #page-pages {
+    text-align: center;
+}
+
+#page-pages {
+    padding-bottom: 2em;
+    text-transform: lowercase;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid;
+    font-weight: bold;
+}
+
+.date-time-title {
+    display: inline-block;
+}
+
+.date-time-title time {
+    /* border-bottom: 1px solid; */
+    font-weight: bold;
+}
+
+#posts {
+    padding-left: 2em;
+}
+
+.post {
+    padding-left: 1em;
+}
+
+.blog-post {
+    padding-left: 1em;
+}
+
+.blog-post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid;
+}
+
+.blog-post-header h1 {
+    text-transform: uppercase;
+    font-size: 14pt;
+    font-weight: normal;
+}
+
+pre {
+    padding: 0.5em;
+    border-radius: 0.25em;
+}
+
+.blog-post p {
+    line-height: 1.5;
+}
+
+p > code {
+    background-color: lightgrey;
+    padding: 0 2px 0 2px;
+    margin: 0 2px 0 2px;
+    border-radius: 0.25em;
+}
+
+#content, .blog-post {
+    flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  border-top: 1px solid;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,12 @@
+name = "r-elephants"
+license = "MIT"
+licenselink = "https://github.com/reykjalin/r-elephants/blob/master/LICENSE.md"
+description = "Minimal Hugo theme."
+homepage = "https://gitlab.com/reykjalin/r-elephants"
+tags = ["blog"]
+features = ["blog"]
+min_version = "0.30.2"
+
+[author]
+  name = "Kristófer Reykjalín Þorláksson"
+  homepage = "https://www.reykjal.in"

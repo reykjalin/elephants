@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+
+<section class="blog-post">
+    <div class="blog-post-header">
+        <h1 class="blog-post-title">{{ .Title }}</h1>
+        {{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }}
+    </div>
+    <div class="blog-post-content">
+        {{ .Content }}
+    </div>
+</section>
+
+{{ partial "footer.html" . }}
