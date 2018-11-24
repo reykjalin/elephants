@@ -1,18 +1,21 @@
 {{ partial "header.html" . }}
 
 <section id=content>
-    <ul class=posts_listing>
-      {{ range .Data.Pages.ByPublishDate.Reverse }}
-        <div id="posts">
-          <div id=date class="date-time-title">
-              <time>{{ .Date.Format (.Site.Params.dateform | default "jan 02, 2006") }}:</time>
-          </div>
-          <div class="date-time-title post">
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </div>
+    {{ range .Pages.GroupByDate "2006" }}
+        <div class="post-year">
+            {{ .Key }}
         </div>
-      {{ end }}
-    </ul>
-  </section>
+        {{ range .Pages.ByPublishDate.Reverse }}
+        <div id="posts">
+            <div id="post-date" class="date-time-title">
+                <time>{{ .Date.Format (.Site.Params.dateform | default "jan 02") }}:</time>
+            </div>
+            <div class="date-time-title post">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </div>
+        </div>
+        {{ end }}
+    {{ end }}
+</section>
 
 {{ partial "footer.html" . }}

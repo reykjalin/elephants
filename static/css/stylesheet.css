@@ -33,21 +33,18 @@ a:hover {
     font-weight: bold;
 }
 
-.date-time-title {
-    display: inline-block;
-}
-
 .date-time-title time {
     /* border-bottom: 1px solid; */
     font-weight: bold;
 }
 
 #posts {
-    padding-left: 2em;
+    display: flex;
+    padding: 0.5em 0 0.5em 0;
 }
 
-.post {
-    padding-left: 1em;
+#post-date {
+    min-width: 25%;
 }
 
 .blog-post {
