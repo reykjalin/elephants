@@ -133,4 +133,7 @@ footer div {
     footer div {
         flex-direction: row;
     }
+    #post-date {
+        min-width: 10%;
+    }
 }
