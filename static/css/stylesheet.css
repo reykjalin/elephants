@@ -64,10 +64,16 @@ a:hover {
     padding-right: 1em;
 }
 
+.blog-post-date {
+    color: grey;
+    min-width: 33%;
+    text-align: right;
+}
+
 .blog-post-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
     border-bottom: 1px solid;
 }
 
