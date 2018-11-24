@@ -89,6 +89,7 @@ h1, h2, h3, h4, #posts a {
 pre {
     padding: 0.5em;
     border-radius: 0.25em;
+    overflow-x: scroll;
 }
 
 p > code {
