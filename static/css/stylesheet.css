@@ -142,4 +142,7 @@ footer div {
     #post-date {
         min-width: 10%;
     }
+    .blog-post-date {
+        min-width: 15%;
+    }
 }
