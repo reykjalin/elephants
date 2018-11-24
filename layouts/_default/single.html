@@ -3,7 +3,7 @@
 <section class="blog-post">
     <div class="blog-post-header">
         <h1 class="blog-post-title">{{ .Title }}</h1>
-        {{ .Date.Format (.Site.Params.dateform | default "january 2, 2006") }}
+        <p class="blog-post-date">{{ .Date.Format (.Site.Params.dateform | default "january 2, 2006") }}</p>
     </div>
     <div class="blog-post-content">
         {{ .Content }}
