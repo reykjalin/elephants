@@ -34,8 +34,7 @@ a:hover {
 }
 
 .date-time-title time {
-    /* border-bottom: 1px solid; */
-    font-weight: bold;
+    color: grey;
 }
 
 #posts {
