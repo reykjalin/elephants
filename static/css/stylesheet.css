@@ -72,7 +72,7 @@ pre {
     border-radius: 0.25em;
 }
 
-.blog-post p, #posts p {
+.blog-post p, #posts {
     line-height: 1.5;
 }
 
