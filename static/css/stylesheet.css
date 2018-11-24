@@ -35,6 +35,8 @@ a:hover {
 
 .date-time-title time {
     color: grey;
+    text-transform: lowercase;
+}
 }
 
 #posts {
