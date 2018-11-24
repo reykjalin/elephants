@@ -47,6 +47,16 @@ a:hover {
     min-width: 25%;
 }
 
+.post-year {
+    border-bottom: 1px solid;
+    padding-top: 2em;
+    text-align: center;
+}
+
+#content {
+    padding: 0 0.5em 0 0.5em;
+}
+
 .blog-post {
     padding-left: 1em;
     padding-right: 1em;
