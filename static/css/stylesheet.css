@@ -115,3 +115,11 @@ footer div {
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 600px) {
+    footer div {
+        display: flex;
+        flex-grow: column;
+        justify-content: space-between;
+    }
+}
