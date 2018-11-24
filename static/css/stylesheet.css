@@ -49,8 +49,11 @@ a:hover {
 
 .post-year {
     border-bottom: 1px solid;
-    padding-top: 2em;
     text-align: center;
+}
+
+.post-whole-year {
+    padding-bottom: 2em;
 }
 
 #content {
