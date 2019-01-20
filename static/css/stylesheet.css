@@ -72,6 +72,7 @@ a:hover {
     padding-right: 1em;
     max-width: 75em;
     min-width: 60em;
+    margin: auto;
 }
 
 .blog-post-date {
