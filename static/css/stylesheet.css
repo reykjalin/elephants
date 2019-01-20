@@ -16,9 +16,14 @@ body {
     text-align: center;
 }
 
+#page-title, #page-pages, #footer {
+    background-color: #eeeeee;
+}
+
 #page-pages {
     padding-bottom: 2em;
     text-transform: lowercase;
+    box-shadow: inset 0 -10px 10px -10px;
 }
 
 a {
@@ -58,11 +63,15 @@ a:hover {
 
 #content {
     padding: 0 1em 0 1em;
+    max-width: 75em;
+    min-width: 60em;
 }
 
 .blog-post {
     padding-left: 1em;
     padding-right: 1em;
+    max-width: 75em;
+    min-width: 60em;
 }
 
 .blog-post-date {
@@ -103,6 +112,12 @@ h1, h2, h3, h4, #posts a {
     line-height: 1.5;
 }
 
+.blog-post-content {
+    max-width: 50em;
+    margin: auto;
+    padding: 2em 0 3em 0;
+}
+
 pre {
     padding: 0.5em;
     border-radius: 0.25em;
@@ -122,10 +137,9 @@ p > code {
 
 footer {
     flex-shrink: 0;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    border-top: 1px solid;
+    padding: 1em 2em;
     line-height: 1.5em;
+    box-shadow: inset 0 10px 10px -10px;
 }
 
 footer div {
