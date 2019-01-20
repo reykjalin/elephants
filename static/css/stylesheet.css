@@ -6,7 +6,6 @@ body {
     font-family: monospace;
     color: black;
     margin: auto;
-    max-width: 1024px;
     font-size: 12pt;
     display: flex;
     flex-direction: column;
