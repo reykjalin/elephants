@@ -7,14 +7,16 @@
                 {{ .Key }}
             </div>
             {{ range .Pages.ByPublishDate.Reverse }}
-            <div id="posts">
-                <div id="post-date" class="date-time-title">
-                    <time>{{ .Date.Format (.Site.Params.dateform | default "Jan 02") }}</time>
-                </div>
-                <div class="date-time-title post">
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </div>
-            </div>
+                {{ if neq .Section "about" }}
+                    <div id="posts">
+                        <div id="post-date" class="date-time-title">
+                            <time>{{ .Date.Format (.Site.Params.dateform | default "Jan 02") }}</time>
+                        </div>
+                        <div class="date-time-title post">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </div>
+                    </div>
+                {{ end }}
             {{ end }}
         </div>
     {{ end }}
