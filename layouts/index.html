@@ -7,7 +7,7 @@
                 {{ .Key }}
             </div>
             {{ range .Pages.ByPublishDate.Reverse }}
-                {{ if neq .Section "about" }}
+                {{ if ne .Section "about" }}
                     <div id="posts">
                         <div id="post-date" class="date-time-title">
                             <time>{{ .Date.Format (.Site.Params.dateform | default "Jan 02") }}</time>
