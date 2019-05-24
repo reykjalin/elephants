@@ -1,45 +1,49 @@
 html, body {
     height: 100%;
+    background: #455a64;
 }
 
 body {
     font-family: sans-serif, monospace;
-    color: black;
+    color: #eceff1;
     margin: auto;
     font-size: 12pt;
     display: flex;
     flex-direction: column;
 }
 
-#page-title, #page-pages {
+#page-title {
     text-align: center;
 }
 
-#page-title, #page-pages, footer {
-    background-color: #eeeeee;
+#page-title a {
+    border: 0;
 }
 
 #page-pages {
+    padding-top: 2em;
     padding-bottom: 2em;
-    text-transform: lowercase;
-    box-shadow: inset 0 -10px 10px -10px;
+    text-align: center;
+}
+
+#page-pages a {
+    margin: 0 1em 0 1em;
 }
 
 a {
-    color: black;
+    color: #eceff1;
     text-decoration: none;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid #eceff1;
 }
 
 a:hover {
+    color: #b0bec5;
     text-decoration: none;
-    border-bottom: 2px solid;
-    font-weight: bold;
+    border-bottom: 2px solid #b0bec5;
 }
 
 .date-time-title time {
-    color: grey;
-    text-transform: lowercase;
+    color: #eceff1;
 }
 
 #posts {
@@ -52,8 +56,9 @@ a:hover {
 }
 
 .post-year {
-    border-bottom: 1px solid;
-    text-align: center;
+    font-weight: bold;
+    font-size: 18pt;
+    padding-bottom: 1em;
 }
 
 .posts-whole-year {
@@ -62,7 +67,7 @@ a:hover {
 
 #content {
     padding: 2em 1em 0 1em;
-    max-width: 60em;
+    max-width: 700px;
     width: 90%;
     margin: auto;
 }
@@ -70,44 +75,23 @@ a:hover {
 .blog-post {
     padding-left: 1em;
     padding-right: 1em;
-    max-width: 60em;
+    max-width: 700px;
     width: 90%;
     margin: auto;
 }
 
 .blog-post-date {
-    color: grey;
-    min-width: 33%;
-    text-align: right;
-}
-
-.blog-post-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    border-bottom: 1px solid;
-}
-
-h1, h2, h3, h4, #posts a {
-    text-transform: lowercase;
+    color: #b0bec5;
+    text-align: center;
 }
 
 .blog-post-header h1 {
-    font-weight: normal;
-    font-size: 12pt;
+    text-align: center;
 }
 
 .blog-post-content h1, .blog-post-content h2, .blog-post-content h3, .blog-post-content h4 {
-    font-weight: normal;
-    font-size: 14pt;
-    border-bottom: 2px dashed;
     margin: 1.5em 0 1em 0;
-}
-
-.blog-post-header h1 {
-    font-size: 12pt;
-    font-weight: normal;
-}
+}   
 
 .blog-post p, #posts {
     line-height: 1.5;
@@ -126,7 +110,7 @@ pre {
 }
 
 p > code {
-    background-color: lightgrey;
+    background-color: #718792;
     padding: 0 2px 0 2px;
     margin: 0 2px 0 2px;
     border-radius: 0.25em;
@@ -140,7 +124,6 @@ footer {
     flex-shrink: 0;
     padding: 1em 2em;
     line-height: 1.5em;
-    box-shadow: inset 0 10px 10px -10px;
 }
 
 footer div {
@@ -155,10 +138,13 @@ footer div {
     footer div {
         flex-direction: row;
     }
+
     #post-date {
         min-width: 10%;
     }
+
     .blog-post-date {
         min-width: 15%;
     }
 }
+
