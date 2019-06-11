@@ -13,6 +13,9 @@
                 </div>
                 <div class="date-time-title post">
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <div class="post-preview">
+                        <p>{{ .Summary }}</p>
+                    </div>
                 </div>
             </div>
             {{ end }}
